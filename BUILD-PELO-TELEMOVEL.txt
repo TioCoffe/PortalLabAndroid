@@ -1,0 +1,24 @@
+COMO GERAR O APK SÓ COM O TELEMÓVEL (GRATUITO)
+
+Este ZIP já inclui uma receita de compilação automática no GitHub Actions.
+Não precisas de Android Studio nem de instalar ferramentas no telemóvel.
+
+1. No browser do telemóvel, entra em https://github.com/ e cria sessão.
+2. Cria um repositório novo (New repository), por exemplo PortalLabAndroid.
+   Podes deixá-lo Public para simplificar e não incluir dados pessoais.
+3. Dentro do repositório, escolhe Add file > Upload files.
+4. Extrai este ZIP no telemóvel e carrega TODOS os ficheiros e pastas que estão
+   dentro da pasta PortalLabAndroid (incluindo a pasta oculta .github).
+   Importante: os ficheiros build.gradle, settings.gradle e a pasta app devem
+   ficar na raiz do repositório, não dentro de uma segunda pasta PortalLabAndroid.
+5. Faz Commit changes.
+6. Abre o separador Actions. Se aparecer um aviso, confirma que queres ativar
+   workflows. Escolhe “Build Android APK” e carrega em Run workflow.
+7. Quando terminar com visto verde, abre a execução, desce até Artifacts e
+   descarrega “PortalLab-debug-apk”.
+8. Extrai o ZIP descarregado e toca em app-debug.apk para instalar.
+   O Android poderá pedir autorização para instalar apps desta origem.
+
+Se a compilação falhar, abre a execução em Actions e envia uma captura do erro.
+
+NOTA: O jogo carrega Three.js de um CDN, por isso precisa de Internet para iniciar.
